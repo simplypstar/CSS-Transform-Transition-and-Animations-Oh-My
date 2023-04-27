@@ -1,1 +1,11 @@
+button {
+    background-color: ghostwhite;
+    transition: 2s;
+} 
+
+
+/* hover over the button to make the background color change   */
+button:hover {
+    background-color: cornflowerblue;
+}
 

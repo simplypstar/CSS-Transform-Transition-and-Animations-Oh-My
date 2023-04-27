@@ -27,17 +27,24 @@ nav {
   opacity: 1;
 }
 
+/* the below keyframes cause the top and bottom bars in the square to form an X while 
+   middle bar disappears*/
+/* hover over the square and the top bar moves from the upper right to lower right */
 @keyframes top {
-  from {}
-  to {}
+  from {transform:(45deg);}
+  to {rotate: 45deg; transform-origin: -7% 200%;}
 }
 
+
+/* hover over the square and the middle bar disappears by changing it's opacity */
 @keyframes middle {
-  from {}
-  to {}
+  from {opacity:100%}
+  to {opacity:0%}
 }
 
+/* hover over the square and the bottom bar moves from the lower right to the upper right*/
 @keyframes bottom {
-  from {}
-  to {}
+  from {transform:(0deg);}
+  to {rotate: -45deg; transform-origin: -5% -100%;}
 }
+
